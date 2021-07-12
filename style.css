@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.intro {
+  position: relative;
+  text-align: center;
+}
+
+.intro > img {
+  width: 100%;
+}
+
+.intro > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: 'Merriweather', serif;
+}
+
+.text .header {
+  font-size: 60px;
+}
+
+.text .subtext {
+  font-size: 20px;
+  font-family: 'Montserrat', serif;
+}
