@@ -1,31 +1,78 @@
 body {
   margin: 0;
   padding: 0;
-}
-
-.intro {
-  position: relative;
   text-align: center;
 }
 
-.intro > img {
-  width: 100%;
+.intro {
+  height: 100vh;
+  background-image: url(img/banner.jpg);
+  background-position: center center;
+  background-repeat: no repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .intro > div {
+  color: white;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
-  font-family: 'Merriweather', serif;
 }
 
 .text .header {
+  font-family: 'Merriweather', sans-serif;
   font-size: 60px;
 }
 
 .text .subtext {
-  font-size: 20px;
   font-family: 'Montserrat', serif;
+  font-size: 20px;
+}
+
+.section > .header {
+  font-family: 'Merriweather', sans-serif;
+  font-size: 40px;
+}
+
+.cards {
+  margin: 20px 20px;
+}
+
+.card {
+  color: white;
+  background-position: center center;
+  background-size: cover;
+  width: 300px;
+  height: 300px; 
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.card.c1 {
+  background-image: url(img/french-toast.jpg);
+}
+
+.card.c2 {
+  background-image: url(img/cookies2.jpg);
+}
+
+.card:hover {
+  transform: translateX(-3px) translateY(-6px);
+}
+
+.card > .text {
+  padding-top: 120px;
+  text-shadow: 1.5px 1.5px 2px #424242;
+}
+
+.card > .text > .header {
+  font-family: 'Merriweather', sans-serif;
+  font-size: 25px;
+}
+
+.card > .text > .subtext {
+  font-family: 'Montserrat', serif;
+  font-size: 15px;
 }
