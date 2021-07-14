@@ -2,15 +2,15 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-}
-
-.intro {
-  height: 100vh;
   background-image: url(img/banner.jpg);
   background-position: center center;
   background-repeat: no repeat;
   background-attachment: fixed;
   background-size: cover;
+}
+
+.intro {
+  height: 100vh;
 }
 
 .intro > div {
@@ -31,13 +31,21 @@ body {
   font-size: 20px;
 }
 
+.section {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
 .section > .header {
+  padding: 40px 0px 10px 0px;
   font-family: 'Merriweather', sans-serif;
   font-size: 40px;
+  color: white;
 }
 
 .cards {
-  margin: 20px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card {
@@ -46,16 +54,29 @@ body {
   background-size: cover;
   width: 300px;
   height: 300px; 
+  margin: 20px 20px;
   cursor: pointer;
   transition: transform 0.5s ease;
 }
 
-.card.c1 {
+.apps .card.c1 {
   background-image: url(img/french-toast.jpg);
 }
 
-.card.c2 {
-  background-image: url(img/cookies2.jpg);
+.apps .card.c2 {
+  background-image: url(img/cookies.jpg);
+}
+
+.apps .card.c3 {
+  background-image: url(img/lego.jpg);
+}
+
+.games .card.c1 {
+  background-image: url(img/forest.jpg);
+}
+
+.games .card.c2 {
+  background-image: url(img/apples.jpg);
 }
 
 .card:hover {
