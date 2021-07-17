@@ -1,3 +1,12 @@
+/* media queries */
+@media only screen and (max-width: 767px) {
+  body {
+  /* The file size of this background image is 93% smaller
+  to improve page load speed on mobile internet connections */
+  background-image: url(images/banner-small.jpg);
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -73,7 +82,6 @@ body {
   height: 300px; 
   margin: 20px 20px;
   cursor: pointer;
-  transition: transform 0.5s ease;
 }
 
 .apps .card.c1 {
@@ -94,10 +102,6 @@ body {
 
 .games .card.c2 {
   background-image: url(img/apples.jpg);
-}
-
-.card:hover {
-  transform: translateX(-3px) translateY(-6px);
 }
 
 .card > .text {
