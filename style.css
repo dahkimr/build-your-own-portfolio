@@ -48,6 +48,23 @@ body {
   width: 30px;
 }
 
+.scroll-text {
+  font-family: 'Montserrat', serif;
+  font-size: 18px;
+  color: white;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.scroll-text .arr1 {
+  margin-top: -2px;
+}
+.scroll-text .arr2 {
+  margin-top: -10px;
+}
+
 .section {
   background-color: rgba(0, 0, 0, 0.6);
 }
